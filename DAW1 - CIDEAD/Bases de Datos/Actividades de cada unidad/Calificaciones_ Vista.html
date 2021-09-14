@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://www.mecd.es/cidead/aulavirtual/grade/report/user/index.php?id=1013 -->
+<html dir="ltr" lang="es" xml:lang="es" class="yui3-js-enabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Calificaciones: Vista</title>
+    <link rel="shortcut icon" href="https://www.mecd.es/cidead/aulavirtual/theme/image.php/clean/theme/1612541458/favicon">
+    
+<meta name="keywords" content="moodle, Calificaciones: Vista">
+<link rel="stylesheet" type="text/css" href="./Calificaciones_ Vista_files/combo"><script charset="utf-8" id="yui_3_17_2_1_1617486153508_23" src="./Calificaciones_ Vista_files/javascript.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1617486153508_24" src="./Calificaciones_ Vista_files/combo(1)" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1617486153508_59" href="./Calificaciones_ Vista_files/combo(2)"><script charset="utf-8" id="yui_3_17_2_1_1617486153508_60" src="./Calificaciones_ Vista_files/combo(3)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1617486153508_69" src="./Calificaciones_ Vista_files/combo(4)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1617486153508_119" src="./Calificaciones_ Vista_files/combo(5)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1617486153508_128" src="./Calificaciones_ Vista_files/combo(6)" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="./Calificaciones_ Vista_files/styles.php">
+<link rel="stylesheet" type="text/css" href="./Calificaciones_ Vista_files/userstyles.php">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/www.mecd.es\/cidead\/aulavirtual","sesskey":"sxg1ScpRrN","loadingicon":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/theme\/image.php\/clean\/core\/1612541458\/i\/loading_small","themerev":"1612541458","slasharguments":1,"theme":"clean","jsrev":"1612541458","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''};if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else me.path=component+'/'+component+'.'+me.type};
+YUI_config = {"debug":false,"base":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/theme\/yui_combo.php?m\/1612541458\/","combine":true,"comboBase":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/theme\/yui_combo.php?","ext":false,"root":"m\/1612541458\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":["node","base"]},"moodle-core_message-deletemessage":{"requires":["node","event"]},"moodle-core_message-messenger":{"requires":["escape","handlebars","io-base","moodle-core-notification-ajaxexception","moodle-core-notification-alert","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_mediagallery-base":{"requires":["base","node","selector-css3","dd-constrain","dd-proxy","dd-drop","dd-plugin","moodle-core-notification","event"]},"moodle-mod_mediagallery-mediabox":{"requires":["base","node","selector-css3"]},"moodle-mod_quiz-util":{"requires":["node"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bsgrid-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_mediagallery-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_styles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]}}},"gallery":{"name":"gallery","base":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1612541458\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/lib\/javascript.php\/1612541458\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/lib\/javascript.php\/1612541458\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"block_accessibility":{"name":"block_accessibility","fullpath":"https:\/\/www.mecd.es\/cidead\/aulavirtual\/lib\/javascript.php\/1612541458\/blocks\/accessibility\/module.js","requires":["base","node","stylesheet"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="./Calificaciones_ Vista_files/requirejs.php"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryprivate" src="./Calificaciones_ Vista_files/javascript(1).php"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./Calificaciones_ Vista_files/javascript(2).php"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script></head>
+
+<body id="page-grade-report-user-index" class="format-topics  path-grade path-grade-report path-grade-report-user safari dir-ltr lang-es yui-skin-sam yui3-skin-sam www-mecd-es--cidead-aulavirtual pagelayout-report course-1013 context-150718 category-111 two-column has-region-side-pre used-region-side-pre side-pre-only jsenabled" style="zoom: 1;">
+
+<div class="skiplinks"><a class="skip" href="https://www.mecd.es/cidead/aulavirtual/grade/report/user/index.php?id=1013#maincontent">Salta al contenido principal</a></div>
+<script type="text/javascript" src="./Calificaciones_ Vista_files/combo(7)"></script><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><script type="text/javascript" src="./Calificaciones_ Vista_files/javascript(3).php"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<header role="banner" class="navbar navbar-fixed-top moodle-has-zindex">
+    <nav role="navigation" class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" title="Página Principal" href="https://www.mecd.es/cidead/aulavirtual">Aula Virtual CIERD (CIDEAD)</a>            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></a>            <div class="usermenu"><div id="action-menu-0" class="moodle-actionmenu nowrap-items" data-enhance="moodle-core-actionmenu" data-enhanced="1"><ul id="action-menu-0-menubar" class="menubar" role="menubar"><li role="presentation"><a class="toggle-display textmenu" title="" id="action-menu-toggle-0" role="menuitem" href="https://www.mecd.es/cidead/aulavirtual/grade/report/user/index.php?id=1013#" aria-haspopup="true"><span class="userbutton"><span class="usertext">XERACH ERNESTO CASANOVA CABRERA</span><span class="avatars"><span class="avatar current"><img src="./Calificaciones_ Vista_files/f2.jpg" alt="Mi perfil" title="Mi perfil" class="userpicture" width="35" height="35" role="presentation"></span></span></span><b class="caret"></b></a></li></ul><ul id="action-menu-0-menu" class="menu  align-tr-br" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu" data-align="tr-br" aria-hidden="true"><li role="presentation"><a class="icon menu-action" role="menuitem" data-title="mymoodle,admin" href="https://www.mecd.es/cidead/aulavirtual/my/" aria-labelledby="actionmenuaction-1"><img class="iconsmall" alt="" src="./Calificaciones_ Vista_files/course.svg"><span class="menu-action-text" id="actionmenuaction-1">Área personal</span></a></li><li role="presentation"><span class="filler">&nbsp;</span></li><li role="presentation"><a class="icon menu-action" role="menuitem" data-title="profile,moodle" href="https://www.mecd.es/cidead/aulavirtual/user/profile.php?id=13291" aria-labelledby="actionmenuaction-2"><img class="iconsmall" alt="" src="./Calificaciones_ Vista_files/user.svg"><span class="menu-action-text" id="actionmenuaction-2">Perfil</span></a></li><li role="presentation"><a class="icon menu-action" role="menuitem" data-title="preferences,moodle" href="https://www.mecd.es/cidead/aulavirtual/user/preferences.php" aria-labelledby="actionmenuaction-3"><img class="iconsmall" alt="" src="./Calificaciones_ Vista_files/preferences.svg"><span class="menu-action-text" id="actionmenuaction-3">Preferencias</span></a></li><li role="presentation"><span class="filler">&nbsp;</span></li><li role="presentation"><a class="icon menu-action" role="menuitem" data-title="logout,moodle" href="https://www.mecd.es/cidead/aulavirtual/login/logout.php?sesskey=sxg1ScpRrN" aria-labelledby="actionmenuaction-4"><img class="iconsmall" alt="" src="./Calificaciones_ Vista_files/logout.svg"><span class="menu-action-text" id="actionmenuaction-4">Salir</span></a></li></ul></div></div>                        <div class="nav-collapse collapse">
+                <ul class="nav"><li class="dropdown"><a href="https://www.mecd.es/cidead/aulavirtual/grade/report/user/index.php?id=1013#cm_submenu_1" class="dropdown-toggle" data-toggle="dropdown" title="Mis cursos">Mis cursos<b class="caret"></b></a><ul class="dropdown-menu"><li><a title=" Mis cursos" href="https://www.mecd.es/cidead/aulavirtual/my/"> Mis cursos</a></li><li><a title="Editar perfil" href="https://www.mecd.es/cidead/aulavirtual/user/edit.php">Editar perfil</a></li></ul></li><li class="dropdown"><a href="https://www.mecd.es/cidead/aulavirtual/grade/report/user/index.php?id=1013#cm_submenu_2" class="dropdown-toggle" data-toggle="dropdown" title="Recursos">Recursos<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="Teclado virtual en español" href="https://www.branah.com/spanish" target="_blank" ""="">Teclado virtual en español</a></li><li><a title="Diccionario RAE" href="http://www.rae.es/recursos/diccionarios/drae" target="_blank" ""="">Diccionario RAE</a></li></ul></li><li class="dropdown"><a href="https://www.mecd.es/cidead/aulavirtual/grade/report/user/index.php?id=1013#cm_submenu_3" class="dropdown-toggle" data-toggle="dropdown" title="Enlaces de interés">Enlaces de interés<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="CIERD(CIDEAD)" href="http://www.educacionyfp.gob.es/educacion/mc/cidead/centro-integrado.html" target="_blank" ""="">CIERD(CIDEAD)</a></li><li><a title="Sede Electrónica" href="https://sede.educacion.gob.es/portada.html" target="_blank" ""="">Sede Electrónica</a></li></ul></li></ul>                <ul class="nav pull-right">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="page" class="container-fluid">
+    <header id="page-header" class="clearfix"><div class="page-context-header"><div class="page-header-headings"><h1>Bases de datos.: Vista: Usuario</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><span class="accesshide" id="navbar-label">Ruta a la página</span><nav aria-labelledby="navbar-label"><ul class="breadcrumb"><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://www.mecd.es/cidead/aulavirtual/"><span itemprop="title">Página Principal</span></a></span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://www.mecd.es/cidead/aulavirtual/course/index.php?categoryid=54"><span itemprop="title">CIDEAD 2020/21</span></a></span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://www.mecd.es/cidead/aulavirtual/course/index.php?categoryid=78"><span itemprop="title">Formación Profesional</span></a></span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://www.mecd.es/cidead/aulavirtual/course/index.php?categoryid=83"><span itemprop="title">Ciclos de Grado Superior</span></a></span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://www.mecd.es/cidead/aulavirtual/course/index.php?categoryid=110"><span itemprop="title">Desarrollo de Aplicaciones Web (DAW)</span></a></span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://www.mecd.es/cidead/aulavirtual/course/index.php?categoryid=111"><span itemprop="title">1_DAW</span></a></span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="Bases de datos." href="https://www.mecd.es/cidead/aulavirtual/course/view.php?id=1013"><span itemprop="title">30484(DAW_BD)</span></a></span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> </span></li><li><span tabindex="0">Administración de calificaciones</span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://www.mecd.es/cidead/aulavirtual/grade/report/user/index.php?id=1013"><span itemprop="title">Usuario</span></a></span></li></ul></nav></div><div class="breadcrumb-button"></div></div><div id="course-header"></div></header>    <div id="page-content" class="row-fluid">
+        <section id="region-main" class="span9 pull-right">
+            <span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><div class="urlselect"><form method="post" action="https://www.mecd.es/cidead/aulavirtual/course/jumpto.php" id="choosepluginreport"><div><label class="accesshide" for="url_select6068e145c5dd413">Informe de calificaciones</label><input type="hidden" name="sesskey" value="sxg1ScpRrN"><select id="url_select6068e145c5dd413" class="select autosubmit urlselect" name="jump"><optgroup label="Vista"><option value="/grade/report/overview/index.php?id=1013">Informe general</option><option selected="selected" value="/grade/report/user/index.php?id=1013">Usuario</option></optgroup></select><noscript class="inline"><div><input type="submit" value="Ir" /></div></noscript></div></form></div><h2>Usuario - XERACH ERNESTO CASANOVA CABRERA</h2><br>
+            <table cellspacing="0" cellpadding="0" summary="La tabla está ordenada como una lista de elementos que incluye categorías y notas. Cuando los elementos pertenecen a una categoría se indica." class="boxaligncenter generaltable user-grade">
+            <thead>
+                <tr>
+                    <th id="itemname" class="header column-itemname" colspan="4">Ítem de calificación</th>
+<th id="weight" class="header column-weight">Peso calculado</th>
+<th id="grade" class="header column-grade">Calificación</th>
+<th id="range" class="header column-range">Rango</th>
+<th id="percentage" class="header column-percentage">Porcentaje</th>
+<th id="feedback" class="header column-feedback">Retroalimentación</th>
+<th id="contributiontocoursetotal" class="header column-contributiontocoursetotal">Aporta al total del curso</th>
+
+                </tr>
+            </thead>
+            <tbody>
+<tr>
+<td class="level1 levelodd oddd1 b1t b2b b1l column-leader" rowspan="60"></td>
+<th id="cat_5517_13291" class="level1 levelodd oddd1 b1b b1t column-itemname" colspan="9"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Bases de datos.</th>
+</tr>
+<tr>
+<td class="level2 leveleven oddd2 b1t b2b b1l column-leader" rowspan="8"></td>
+<th id="cat_6311_13291" class="level2 leveleven oddd2 b1b b1t column-itemname" colspan="8"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Unidad 1</th>
+</tr>
+<tr>
+<td class="level3 levelodd oddd3 b1t b2b b1l column-leader" rowspan="2"></td>
+<th id="cat_6313_13291" class="level3 levelodd oddd3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Examen U1</th>
+</tr>
+<tr>
+<th id="row_29519_13291" class="level3 levelodd oddd3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Media de calificaciones" title="Media de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Examen U1</span><div class="gradeitemdescription">Media de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6313_13291 row_29519_13291 weight" class="level3 levelodd oddd3 baggt b2b itemcenter  column-weight">20,00 %</td>
+<td headers="cat_6313_13291 row_29519_13291 grade" class="level3 levelodd oddd3 baggt b2b itemcenter  column-grade">-</td>
+<td headers="cat_6313_13291 row_29519_13291 range" class="level3 levelodd oddd3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6313_13291 row_29519_13291 percentage" class="level3 levelodd oddd3 baggt b2b itemcenter  column-percentage">-</td>
+<td headers="cat_6313_13291 row_29519_13291 feedback" class="level3 levelodd oddd3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6313_13291 row_29519_13291 contributiontocoursetotal" class="level3 levelodd oddd3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level3 levelodd evend3 b1t b2b b1l column-leader" rowspan="4"></td>
+<th id="cat_6312_13291" class="level3 levelodd evend3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Tareas U1</th>
+</tr>
+<tr>
+<th id="row_24243_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=95589"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Tarea para BD01.</a></th>
+<td headers="cat_6312_13291 row_24243_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">100,00 %</td>
+<td headers="cat_6312_13291 row_24243_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">9,00</td>
+<td headers="cat_6312_13291 row_24243_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6312_13291 row_24243_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">90,00 %</td>
+<td headers="cat_6312_13291 row_24243_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback"><p>Instalación: Perfecto.</p>
+<p>Conexión como administrador: Perfecto, aunque la actividad pide que te desconectes.</p>
+<p>Creación de usuario: Perfecto, sólo te faltó cerrar sesión de Administrador.</p>
+<p>Nota: La próxima vez pega las capturas más grandes, por favor.</p></td>
+<td headers="cat_6312_13291 row_24243_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">72,00 %</td>
+</tr>
+<tr>
+<th id="row_29333_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=112012"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Recuperación Tarea para BD01.</a></th>
+<td headers="cat_6312_13291 row_29333_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">0,00 %</td>
+<td headers="cat_6312_13291 row_29333_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">-</td>
+<td headers="cat_6312_13291 row_29333_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6312_13291 row_29333_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">-</td>
+<td headers="cat_6312_13291 row_29333_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6312_13291 row_29333_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">0,00 %</td>
+</tr>
+<tr>
+<th id="row_29518_13291" class="level3 levelodd evend3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Calificación más alta" title="Calificación más alta" src="./Calificaciones_ Vista_files/calc.svg">Total Tareas U1</span><div class="gradeitemdescription">Calificación más alta. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6312_13291 row_29518_13291 weight" class="level3 levelodd evend3 baggt b2b itemcenter  column-weight">80,00 %</td>
+<td headers="cat_6312_13291 row_29518_13291 grade" class="level3 levelodd evend3 baggt b2b itemcenter  column-grade">9,00</td>
+<td headers="cat_6312_13291 row_29518_13291 range" class="level3 levelodd evend3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6312_13291 row_29518_13291 percentage" class="level3 levelodd evend3 baggt b2b itemcenter  column-percentage">90,00 %</td>
+<td headers="cat_6312_13291 row_29518_13291 feedback" class="level3 levelodd evend3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6312_13291 row_29518_13291 contributiontocoursetotal" class="level3 levelodd evend3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<th id="row_29517_13291" class="level2 leveleven oddd2 baggt b2b column-itemname" colspan="2"><span><img class="icon itemicon" alt="Media ponderada de calificaciones" title="Media ponderada de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Unidad 1</span><div class="gradeitemdescription">Media ponderada de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6311_13291 row_29517_13291 weight" class="level2 leveleven oddd2 baggt b2b itemcenter  column-weight">-</td>
+<td headers="cat_6311_13291 row_29517_13291 grade" class="level2 leveleven oddd2 baggt b2b itemcenter  column-grade">7,20</td>
+<td headers="cat_6311_13291 row_29517_13291 range" class="level2 leveleven oddd2 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6311_13291 row_29517_13291 percentage" class="level2 leveleven oddd2 baggt b2b itemcenter  column-percentage">72,00 %</td>
+<td headers="cat_6311_13291 row_29517_13291 feedback" class="level2 leveleven oddd2 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6311_13291 row_29517_13291 contributiontocoursetotal" class="level2 leveleven oddd2 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level2 leveleven evend2 b1t b2b b1l column-leader" rowspan="8"></td>
+<th id="cat_6314_13291" class="level2 leveleven evend2 b1b b1t column-itemname" colspan="8"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Unidad 2</th>
+</tr>
+<tr>
+<td class="level3 levelodd oddd3 b1t b2b b1l column-leader" rowspan="2"></td>
+<th id="cat_6315_13291" class="level3 levelodd oddd3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Examen U2</th>
+</tr>
+<tr>
+<th id="row_29524_13291" class="level3 levelodd oddd3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Media de calificaciones" title="Media de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Examen U2</span><div class="gradeitemdescription">Media de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6315_13291 row_29524_13291 weight" class="level3 levelodd oddd3 baggt b2b itemcenter  column-weight">67,00 %</td>
+<td headers="cat_6315_13291 row_29524_13291 grade" class="level3 levelodd oddd3 baggt b2b itemcenter  column-grade">-</td>
+<td headers="cat_6315_13291 row_29524_13291 range" class="level3 levelodd oddd3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6315_13291 row_29524_13291 percentage" class="level3 levelodd oddd3 baggt b2b itemcenter  column-percentage">-</td>
+<td headers="cat_6315_13291 row_29524_13291 feedback" class="level3 levelodd oddd3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6315_13291 row_29524_13291 contributiontocoursetotal" class="level3 levelodd oddd3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level3 levelodd evend3 b1t b2b b1l column-leader" rowspan="4"></td>
+<th id="cat_6316_13291" class="level3 levelodd evend3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Tareas U2</th>
+</tr>
+<tr>
+<th id="row_24246_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=95607"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Tarea para BD02.</a></th>
+<td headers="cat_6316_13291 row_24246_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">100,00 %</td>
+<td headers="cat_6316_13291 row_24246_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">9,50</td>
+<td headers="cat_6316_13291 row_24246_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6316_13291 row_24246_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">95,00 %</td>
+<td headers="cat_6316_13291 row_24246_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6316_13291 row_24246_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">31,35 %</td>
+</tr>
+<tr>
+<th id="row_29334_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=112013"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Recuperación Tarea para BD02.</a></th>
+<td headers="cat_6316_13291 row_29334_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">0,00 %</td>
+<td headers="cat_6316_13291 row_29334_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">-</td>
+<td headers="cat_6316_13291 row_29334_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6316_13291 row_29334_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">-</td>
+<td headers="cat_6316_13291 row_29334_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6316_13291 row_29334_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">0,00 %</td>
+</tr>
+<tr>
+<th id="row_29525_13291" class="level3 levelodd evend3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Calificación más alta" title="Calificación más alta" src="./Calificaciones_ Vista_files/calc.svg">Total Tareas U2</span><div class="gradeitemdescription">Calificación más alta. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6316_13291 row_29525_13291 weight" class="level3 levelodd evend3 baggt b2b itemcenter  column-weight">33,00 %</td>
+<td headers="cat_6316_13291 row_29525_13291 grade" class="level3 levelodd evend3 baggt b2b itemcenter  column-grade">9,50</td>
+<td headers="cat_6316_13291 row_29525_13291 range" class="level3 levelodd evend3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6316_13291 row_29525_13291 percentage" class="level3 levelodd evend3 baggt b2b itemcenter  column-percentage">95,00 %</td>
+<td headers="cat_6316_13291 row_29525_13291 feedback" class="level3 levelodd evend3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6316_13291 row_29525_13291 contributiontocoursetotal" class="level3 levelodd evend3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<th id="row_29523_13291" class="level2 leveleven evend2 baggt b2b column-itemname" colspan="2"><span><img class="icon itemicon" alt="Media ponderada de calificaciones" title="Media ponderada de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Unidad 2</span><div class="gradeitemdescription">Media ponderada de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6314_13291 row_29523_13291 weight" class="level2 leveleven evend2 baggt b2b itemcenter  column-weight">-</td>
+<td headers="cat_6314_13291 row_29523_13291 grade" class="level2 leveleven evend2 baggt b2b itemcenter  column-grade">3,14</td>
+<td headers="cat_6314_13291 row_29523_13291 range" class="level2 leveleven evend2 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6314_13291 row_29523_13291 percentage" class="level2 leveleven evend2 baggt b2b itemcenter  column-percentage">31,35 %</td>
+<td headers="cat_6314_13291 row_29523_13291 feedback" class="level2 leveleven evend2 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6314_13291 row_29523_13291 contributiontocoursetotal" class="level2 leveleven evend2 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level2 leveleven oddd2 b1t b2b b1l column-leader" rowspan="8"></td>
+<th id="cat_6317_13291" class="level2 leveleven oddd2 b1b b1t column-itemname" colspan="8"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Unidad 3</th>
+</tr>
+<tr>
+<td class="level3 levelodd oddd3 b1t b2b b1l column-leader" rowspan="2"></td>
+<th id="cat_6318_13291" class="level3 levelodd oddd3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Examen U3</th>
+</tr>
+<tr>
+<th id="row_29527_13291" class="level3 levelodd oddd3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Media de calificaciones" title="Media de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Examen U3</span><div class="gradeitemdescription">Media de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6318_13291 row_29527_13291 weight" class="level3 levelodd oddd3 baggt b2b itemcenter  column-weight">75,00 %</td>
+<td headers="cat_6318_13291 row_29527_13291 grade" class="level3 levelodd oddd3 baggt b2b itemcenter  column-grade">-</td>
+<td headers="cat_6318_13291 row_29527_13291 range" class="level3 levelodd oddd3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6318_13291 row_29527_13291 percentage" class="level3 levelodd oddd3 baggt b2b itemcenter  column-percentage">-</td>
+<td headers="cat_6318_13291 row_29527_13291 feedback" class="level3 levelodd oddd3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6318_13291 row_29527_13291 contributiontocoursetotal" class="level3 levelodd oddd3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level3 levelodd evend3 b1t b2b b1l column-leader" rowspan="4"></td>
+<th id="cat_6319_13291" class="level3 levelodd evend3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Tareas U3</th>
+</tr>
+<tr>
+<th id="row_24249_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=95625"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Tarea para BD03.</a></th>
+<td headers="cat_6319_13291 row_24249_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">100,00 %</td>
+<td headers="cat_6319_13291 row_24249_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">9,00</td>
+<td headers="cat_6319_13291 row_24249_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6319_13291 row_24249_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">90,00 %</td>
+<td headers="cat_6319_13291 row_24249_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback"><p>Hola Xerach!</p>
+<p>un ejercicio muy completo de nuevo.</p>
+<p>En el modelo relacional, se pedía realizarlo mediante un grafo relacional, y bueno eso son las herramientas de DIA, que no está mal pero no es exactamente lo que se pedía.</p>
+<p>En el diseño conceptual, podrías haber optado por crear una jerarquía para la experiencia. Lo que creo que no está nada bien es la agregación de alumno y curso, quizás con curso y centro tendría más sentido. Pero también son puntos de vista.</p></td>
+<td headers="cat_6319_13291 row_24249_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">22,50 %</td>
+</tr>
+<tr>
+<th id="row_29335_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=112014"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Recuperación Tarea para BD03.</a></th>
+<td headers="cat_6319_13291 row_29335_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">0,00 %</td>
+<td headers="cat_6319_13291 row_29335_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">-</td>
+<td headers="cat_6319_13291 row_29335_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6319_13291 row_29335_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">-</td>
+<td headers="cat_6319_13291 row_29335_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6319_13291 row_29335_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">0,00 %</td>
+</tr>
+<tr>
+<th id="row_29528_13291" class="level3 levelodd evend3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Calificación más alta" title="Calificación más alta" src="./Calificaciones_ Vista_files/calc.svg">Total Tareas U3</span><div class="gradeitemdescription">Calificación más alta. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6319_13291 row_29528_13291 weight" class="level3 levelodd evend3 baggt b2b itemcenter  column-weight">25,00 %</td>
+<td headers="cat_6319_13291 row_29528_13291 grade" class="level3 levelodd evend3 baggt b2b itemcenter  column-grade">9,00</td>
+<td headers="cat_6319_13291 row_29528_13291 range" class="level3 levelodd evend3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6319_13291 row_29528_13291 percentage" class="level3 levelodd evend3 baggt b2b itemcenter  column-percentage">90,00 %</td>
+<td headers="cat_6319_13291 row_29528_13291 feedback" class="level3 levelodd evend3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6319_13291 row_29528_13291 contributiontocoursetotal" class="level3 levelodd evend3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<th id="row_29526_13291" class="level2 leveleven oddd2 baggt b2b column-itemname" colspan="2"><span><img class="icon itemicon" alt="Media ponderada de calificaciones" title="Media ponderada de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Unidad 3</span><div class="gradeitemdescription">Media ponderada de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6317_13291 row_29526_13291 weight" class="level2 leveleven oddd2 baggt b2b itemcenter  column-weight">-</td>
+<td headers="cat_6317_13291 row_29526_13291 grade" class="level2 leveleven oddd2 baggt b2b itemcenter  column-grade">2,25</td>
+<td headers="cat_6317_13291 row_29526_13291 range" class="level2 leveleven oddd2 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6317_13291 row_29526_13291 percentage" class="level2 leveleven oddd2 baggt b2b itemcenter  column-percentage">22,50 %</td>
+<td headers="cat_6317_13291 row_29526_13291 feedback" class="level2 leveleven oddd2 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6317_13291 row_29526_13291 contributiontocoursetotal" class="level2 leveleven oddd2 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level2 leveleven evend2 b1t b2b b1l column-leader" rowspan="8"></td>
+<th id="cat_6320_13291" class="level2 leveleven evend2 b1b b1t column-itemname" colspan="8"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Unidad 4</th>
+</tr>
+<tr>
+<td class="level3 levelodd oddd3 b1t b2b b1l column-leader" rowspan="2"></td>
+<th id="cat_6322_13291" class="level3 levelodd oddd3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Examen U4</th>
+</tr>
+<tr>
+<th id="row_29532_13291" class="level3 levelodd oddd3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Media de calificaciones" title="Media de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Examen U4</span><div class="gradeitemdescription">Media de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6322_13291 row_29532_13291 weight" class="level3 levelodd oddd3 baggt b2b itemcenter  column-weight">75,00 %</td>
+<td headers="cat_6322_13291 row_29532_13291 grade" class="level3 levelodd oddd3 baggt b2b itemcenter  column-grade">-</td>
+<td headers="cat_6322_13291 row_29532_13291 range" class="level3 levelodd oddd3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6322_13291 row_29532_13291 percentage" class="level3 levelodd oddd3 baggt b2b itemcenter  column-percentage">-</td>
+<td headers="cat_6322_13291 row_29532_13291 feedback" class="level3 levelodd oddd3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6322_13291 row_29532_13291 contributiontocoursetotal" class="level3 levelodd oddd3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level3 levelodd evend3 b1t b2b b1l column-leader" rowspan="4"></td>
+<th id="cat_6323_13291" class="level3 levelodd evend3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Tareas U4</th>
+</tr>
+<tr>
+<th id="row_24252_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=95643"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Tarea para BD04.</a></th>
+<td headers="cat_6323_13291 row_24252_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">100,00 %</td>
+<td headers="cat_6323_13291 row_24252_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">9,75</td>
+<td headers="cat_6323_13291 row_24252_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6323_13291 row_24252_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">97,50 %</td>
+<td headers="cat_6323_13291 row_24252_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6323_13291 row_24252_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">24,38 %</td>
+</tr>
+<tr>
+<th id="row_29336_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=112015"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Recuperación Tarea para BD04.</a></th>
+<td headers="cat_6323_13291 row_29336_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">0,00 %</td>
+<td headers="cat_6323_13291 row_29336_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">-</td>
+<td headers="cat_6323_13291 row_29336_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6323_13291 row_29336_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">-</td>
+<td headers="cat_6323_13291 row_29336_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6323_13291 row_29336_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">0,00 %</td>
+</tr>
+<tr>
+<th id="row_29533_13291" class="level3 levelodd evend3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Calificación más alta" title="Calificación más alta" src="./Calificaciones_ Vista_files/calc.svg">Total Tareas U4</span><div class="gradeitemdescription">Calificación más alta. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6323_13291 row_29533_13291 weight" class="level3 levelodd evend3 baggt b2b itemcenter  column-weight">25,00 %</td>
+<td headers="cat_6323_13291 row_29533_13291 grade" class="level3 levelodd evend3 baggt b2b itemcenter  column-grade">9,75</td>
+<td headers="cat_6323_13291 row_29533_13291 range" class="level3 levelodd evend3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6323_13291 row_29533_13291 percentage" class="level3 levelodd evend3 baggt b2b itemcenter  column-percentage">97,50 %</td>
+<td headers="cat_6323_13291 row_29533_13291 feedback" class="level3 levelodd evend3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6323_13291 row_29533_13291 contributiontocoursetotal" class="level3 levelodd evend3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<th id="row_29529_13291" class="level2 leveleven evend2 baggt b2b column-itemname" colspan="2"><span><img class="icon itemicon" alt="Media ponderada de calificaciones" title="Media ponderada de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Unidad 4</span><div class="gradeitemdescription">Media ponderada de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6320_13291 row_29529_13291 weight" class="level2 leveleven evend2 baggt b2b itemcenter  column-weight">-</td>
+<td headers="cat_6320_13291 row_29529_13291 grade" class="level2 leveleven evend2 baggt b2b itemcenter  column-grade">2,44</td>
+<td headers="cat_6320_13291 row_29529_13291 range" class="level2 leveleven evend2 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6320_13291 row_29529_13291 percentage" class="level2 leveleven evend2 baggt b2b itemcenter  column-percentage">24,38 %</td>
+<td headers="cat_6320_13291 row_29529_13291 feedback" class="level2 leveleven evend2 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6320_13291 row_29529_13291 contributiontocoursetotal" class="level2 leveleven evend2 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level2 leveleven oddd2 b1t b2b b1l column-leader" rowspan="8"></td>
+<th id="cat_6324_13291" class="level2 leveleven oddd2 b1b b1t column-itemname" colspan="8"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Unidad 5</th>
+</tr>
+<tr>
+<td class="level3 levelodd oddd3 b1t b2b b1l column-leader" rowspan="2"></td>
+<th id="cat_6325_13291" class="level3 levelodd oddd3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Examen U5</th>
+</tr>
+<tr>
+<th id="row_29535_13291" class="level3 levelodd oddd3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Media de calificaciones" title="Media de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Examen U5</span><div class="gradeitemdescription">Media de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6325_13291 row_29535_13291 weight" class="level3 levelodd oddd3 baggt b2b itemcenter  column-weight">67,00 %</td>
+<td headers="cat_6325_13291 row_29535_13291 grade" class="level3 levelodd oddd3 baggt b2b itemcenter  column-grade">-</td>
+<td headers="cat_6325_13291 row_29535_13291 range" class="level3 levelodd oddd3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6325_13291 row_29535_13291 percentage" class="level3 levelodd oddd3 baggt b2b itemcenter  column-percentage">-</td>
+<td headers="cat_6325_13291 row_29535_13291 feedback" class="level3 levelodd oddd3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6325_13291 row_29535_13291 contributiontocoursetotal" class="level3 levelodd oddd3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level3 levelodd evend3 b1t b2b b1l column-leader" rowspan="4"></td>
+<th id="cat_6326_13291" class="level3 levelodd evend3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Tareas U5</th>
+</tr>
+<tr>
+<th id="row_24255_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=95661"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Tarea para BD05.</a></th>
+<td headers="cat_6326_13291 row_24255_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">100,00 %</td>
+<td headers="cat_6326_13291 row_24255_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">9,50</td>
+<td headers="cat_6326_13291 row_24255_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6326_13291 row_24255_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">95,00 %</td>
+<td headers="cat_6326_13291 row_24255_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback"><p>Cuidado al modificar, mejor filtrar por código.</p></td>
+<td headers="cat_6326_13291 row_24255_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">31,35 %</td>
+</tr>
+<tr>
+<th id="row_29337_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=112016"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Recuperación Tarea para BD05.</a></th>
+<td headers="cat_6326_13291 row_29337_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">0,00 %</td>
+<td headers="cat_6326_13291 row_29337_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">-</td>
+<td headers="cat_6326_13291 row_29337_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6326_13291 row_29337_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">-</td>
+<td headers="cat_6326_13291 row_29337_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6326_13291 row_29337_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">0,00 %</td>
+</tr>
+<tr>
+<th id="row_29536_13291" class="level3 levelodd evend3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Calificación más alta" title="Calificación más alta" src="./Calificaciones_ Vista_files/calc.svg">Total Tareas U5</span><div class="gradeitemdescription">Calificación más alta. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6326_13291 row_29536_13291 weight" class="level3 levelodd evend3 baggt b2b itemcenter  column-weight">33,00 %</td>
+<td headers="cat_6326_13291 row_29536_13291 grade" class="level3 levelodd evend3 baggt b2b itemcenter  column-grade">9,50</td>
+<td headers="cat_6326_13291 row_29536_13291 range" class="level3 levelodd evend3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6326_13291 row_29536_13291 percentage" class="level3 levelodd evend3 baggt b2b itemcenter  column-percentage">95,00 %</td>
+<td headers="cat_6326_13291 row_29536_13291 feedback" class="level3 levelodd evend3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6326_13291 row_29536_13291 contributiontocoursetotal" class="level3 levelodd evend3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<th id="row_29534_13291" class="level2 leveleven oddd2 baggt b2b column-itemname" colspan="2"><span><img class="icon itemicon" alt="Media ponderada de calificaciones" title="Media ponderada de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Unidad 5</span><div class="gradeitemdescription">Media ponderada de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6324_13291 row_29534_13291 weight" class="level2 leveleven oddd2 baggt b2b itemcenter  column-weight">-</td>
+<td headers="cat_6324_13291 row_29534_13291 grade" class="level2 leveleven oddd2 baggt b2b itemcenter  column-grade">3,14</td>
+<td headers="cat_6324_13291 row_29534_13291 range" class="level2 leveleven oddd2 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6324_13291 row_29534_13291 percentage" class="level2 leveleven oddd2 baggt b2b itemcenter  column-percentage">31,35 %</td>
+<td headers="cat_6324_13291 row_29534_13291 feedback" class="level2 leveleven oddd2 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6324_13291 row_29534_13291 contributiontocoursetotal" class="level2 leveleven oddd2 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level2 leveleven evend2 b1t b2b b1l column-leader" rowspan="8"></td>
+<th id="cat_6327_13291" class="level2 leveleven evend2 b1b b1t column-itemname" colspan="8"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Unidad 6</th>
+</tr>
+<tr>
+<td class="level3 levelodd oddd3 b1t b2b b1l column-leader" rowspan="2"></td>
+<th id="cat_6328_13291" class="level3 levelodd oddd3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Examen U6</th>
+</tr>
+<tr>
+<th id="row_29538_13291" class="level3 levelodd oddd3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Media de calificaciones" title="Media de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Examen U6</span><div class="gradeitemdescription">Media de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6328_13291 row_29538_13291 weight" class="level3 levelodd oddd3 baggt b2b itemcenter  column-weight">40,00 %</td>
+<td headers="cat_6328_13291 row_29538_13291 grade" class="level3 levelodd oddd3 baggt b2b itemcenter  column-grade">-</td>
+<td headers="cat_6328_13291 row_29538_13291 range" class="level3 levelodd oddd3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6328_13291 row_29538_13291 percentage" class="level3 levelodd oddd3 baggt b2b itemcenter  column-percentage">-</td>
+<td headers="cat_6328_13291 row_29538_13291 feedback" class="level3 levelodd oddd3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6328_13291 row_29538_13291 contributiontocoursetotal" class="level3 levelodd oddd3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level3 levelodd evend3 b1t b2b b1l column-leader" rowspan="4"></td>
+<th id="cat_6329_13291" class="level3 levelodd evend3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Tareas U6</th>
+</tr>
+<tr>
+<th id="row_24258_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=95679"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Tarea para BD06.</a></th>
+<td headers="cat_6329_13291 row_24258_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">100,00 %</td>
+<td headers="cat_6329_13291 row_24258_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">10,00</td>
+<td headers="cat_6329_13291 row_24258_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6329_13291 row_24258_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">100,00 %</td>
+<td headers="cat_6329_13291 row_24258_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6329_13291 row_24258_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">60,00 %</td>
+</tr>
+<tr>
+<th id="row_29338_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=112017"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Recuperación Tarea para BD06.</a></th>
+<td headers="cat_6329_13291 row_29338_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">0,00 %</td>
+<td headers="cat_6329_13291 row_29338_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">-</td>
+<td headers="cat_6329_13291 row_29338_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6329_13291 row_29338_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">-</td>
+<td headers="cat_6329_13291 row_29338_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6329_13291 row_29338_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">0,00 %</td>
+</tr>
+<tr>
+<th id="row_29539_13291" class="level3 levelodd evend3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Calificación más alta" title="Calificación más alta" src="./Calificaciones_ Vista_files/calc.svg">Total Tareas U6</span><div class="gradeitemdescription">Calificación más alta. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6329_13291 row_29539_13291 weight" class="level3 levelodd evend3 baggt b2b itemcenter  column-weight">60,00 %</td>
+<td headers="cat_6329_13291 row_29539_13291 grade" class="level3 levelodd evend3 baggt b2b itemcenter  column-grade">10,00</td>
+<td headers="cat_6329_13291 row_29539_13291 range" class="level3 levelodd evend3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6329_13291 row_29539_13291 percentage" class="level3 levelodd evend3 baggt b2b itemcenter  column-percentage">100,00 %</td>
+<td headers="cat_6329_13291 row_29539_13291 feedback" class="level3 levelodd evend3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6329_13291 row_29539_13291 contributiontocoursetotal" class="level3 levelodd evend3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<th id="row_29537_13291" class="level2 leveleven evend2 baggt b2b column-itemname" colspan="2"><span><img class="icon itemicon" alt="Media ponderada de calificaciones" title="Media ponderada de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Unidad 6</span><div class="gradeitemdescription">Media ponderada de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6327_13291 row_29537_13291 weight" class="level2 leveleven evend2 baggt b2b itemcenter  column-weight">-</td>
+<td headers="cat_6327_13291 row_29537_13291 grade" class="level2 leveleven evend2 baggt b2b itemcenter  column-grade">6,00</td>
+<td headers="cat_6327_13291 row_29537_13291 range" class="level2 leveleven evend2 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6327_13291 row_29537_13291 percentage" class="level2 leveleven evend2 baggt b2b itemcenter  column-percentage">60,00 %</td>
+<td headers="cat_6327_13291 row_29537_13291 feedback" class="level2 leveleven evend2 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6327_13291 row_29537_13291 contributiontocoursetotal" class="level2 leveleven evend2 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level2 leveleven oddd2 b1t b2b b1l column-leader" rowspan="8"></td>
+<th id="cat_6330_13291" class="level2 leveleven oddd2 b1b b1t column-itemname" colspan="8"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Unidad 7</th>
+</tr>
+<tr>
+<td class="level3 levelodd oddd3 b1t b2b b1l column-leader" rowspan="2"></td>
+<th id="cat_6331_13291" class="level3 levelodd oddd3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Examen U7</th>
+</tr>
+<tr>
+<th id="row_29541_13291" class="level3 levelodd oddd3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Media de calificaciones" title="Media de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Examen U7</span><div class="gradeitemdescription">Media de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6331_13291 row_29541_13291 weight" class="level3 levelodd oddd3 baggt b2b itemcenter  column-weight">40,00 %</td>
+<td headers="cat_6331_13291 row_29541_13291 grade" class="level3 levelodd oddd3 baggt b2b itemcenter  column-grade">-</td>
+<td headers="cat_6331_13291 row_29541_13291 range" class="level3 levelodd oddd3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6331_13291 row_29541_13291 percentage" class="level3 levelodd oddd3 baggt b2b itemcenter  column-percentage">-</td>
+<td headers="cat_6331_13291 row_29541_13291 feedback" class="level3 levelodd oddd3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6331_13291 row_29541_13291 contributiontocoursetotal" class="level3 levelodd oddd3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<td class="level3 levelodd evend3 b1t b2b b1l column-leader" rowspan="4"></td>
+<th id="cat_6332_13291" class="level3 levelodd evend3 b1b b1t column-itemname" colspan="7"><img class="icon itemicon" alt="Categoría" title="Categoría" src="./Calificaciones_ Vista_files/folder.svg">Tareas U7</th>
+</tr>
+<tr>
+<th id="row_24261_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=95697"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Tarea para BD07.</a></th>
+<td headers="cat_6332_13291 row_24261_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">100,00 %</td>
+<td headers="cat_6332_13291 row_24261_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">-</td>
+<td headers="cat_6332_13291 row_24261_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6332_13291 row_24261_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">-</td>
+<td headers="cat_6332_13291 row_24261_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6332_13291 row_24261_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">0,00 %</td>
+</tr>
+<tr>
+<th id="row_29339_13291" class="level4 leveleven item b1b column-itemname" colspan="1"><a title="Enlazar a la actividad Tarea" href="https://www.mecd.es/cidead/aulavirtual/mod/assign/view.php?id=112018"><img class="icon itemicon" src="./Calificaciones_ Vista_files/icon.svg" alt="Tarea">Recuperación Tarea para BD07.</a></th>
+<td headers="cat_6332_13291 row_29339_13291 weight" class="level4 leveleven item b1b itemcenter  column-weight">0,00 %</td>
+<td headers="cat_6332_13291 row_29339_13291 grade" class="level4 leveleven item b1b itemcenter  column-grade">-</td>
+<td headers="cat_6332_13291 row_29339_13291 range" class="level4 leveleven item b1b itemcenter  column-range">0–10</td>
+<td headers="cat_6332_13291 row_29339_13291 percentage" class="level4 leveleven item b1b itemcenter  column-percentage">-</td>
+<td headers="cat_6332_13291 row_29339_13291 feedback" class="level4 leveleven item b1b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6332_13291 row_29339_13291 contributiontocoursetotal" class="level4 leveleven item b1b itemcenter  column-contributiontocoursetotal">0,00 %</td>
+</tr>
+<tr>
+<th id="row_29542_13291" class="level3 levelodd evend3 baggt b2b column-itemname" colspan="1"><span><img class="icon itemicon" alt="Calificación más alta" title="Calificación más alta" src="./Calificaciones_ Vista_files/calc.svg">Total Tareas U7</span><div class="gradeitemdescription">Calificación más alta. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6332_13291 row_29542_13291 weight" class="level3 levelodd evend3 baggt b2b itemcenter  column-weight">60,00 %</td>
+<td headers="cat_6332_13291 row_29542_13291 grade" class="level3 levelodd evend3 baggt b2b itemcenter  column-grade">0,00</td>
+<td headers="cat_6332_13291 row_29542_13291 range" class="level3 levelodd evend3 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6332_13291 row_29542_13291 percentage" class="level3 levelodd evend3 baggt b2b itemcenter  column-percentage">0,00 %</td>
+<td headers="cat_6332_13291 row_29542_13291 feedback" class="level3 levelodd evend3 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6332_13291 row_29542_13291 contributiontocoursetotal" class="level3 levelodd evend3 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+<th id="row_29540_13291" class="level2 leveleven oddd2 baggt b2b column-itemname" colspan="2"><span><img class="icon itemicon" alt="Media ponderada de calificaciones" title="Media ponderada de calificaciones" src="./Calificaciones_ Vista_files/agg_mean.svg">Total Unidad 7</span><div class="gradeitemdescription">Media ponderada de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_6330_13291 row_29540_13291 weight" class="level2 leveleven oddd2 baggt b2b itemcenter  column-weight">-</td>
+<td headers="cat_6330_13291 row_29540_13291 grade" class="level2 leveleven oddd2 baggt b2b itemcenter  column-grade">0,00</td>
+<td headers="cat_6330_13291 row_29540_13291 range" class="level2 leveleven oddd2 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_6330_13291 row_29540_13291 percentage" class="level2 leveleven oddd2 baggt b2b itemcenter  column-percentage">0,00 %</td>
+<td headers="cat_6330_13291 row_29540_13291 feedback" class="level2 leveleven oddd2 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_6330_13291 row_29540_13291 contributiontocoursetotal" class="level2 leveleven oddd2 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<th id="row_24238_13291" class="level1 levelodd oddd1 baggt b2b column-itemname" colspan="3"><span><img class="icon itemicon" alt="Calificación calculada" title="Calificación calculada" src="./Calificaciones_ Vista_files/calc.svg">Nota Final</span><div class="gradeitemdescription">Media ponderada de calificaciones. Incluye calificaciones vacías.</div><div class="gradeitemdescriptionfiller"></div></th>
+<td headers="cat_5517_13291 row_24238_13291 weight" class="level1 levelodd oddd1 baggt b2b itemcenter  column-weight">-</td>
+<td headers="cat_5517_13291 row_24238_13291 grade" class="level1 levelodd oddd1 baggt b2b itemcenter  column-grade">3,20</td>
+<td headers="cat_5517_13291 row_24238_13291 range" class="level1 levelodd oddd1 baggt b2b itemcenter  column-range">0–10</td>
+<td headers="cat_5517_13291 row_24238_13291 percentage" class="level1 levelodd oddd1 baggt b2b itemcenter  column-percentage">31,98 %</td>
+<td headers="cat_5517_13291 row_24238_13291 feedback" class="level1 levelodd oddd1 baggt b2b feedbacktext column-feedback">&nbsp;</td>
+<td headers="cat_5517_13291 row_24238_13291 contributiontocoursetotal" class="level1 levelodd oddd1 baggt b2b itemcenter  column-contributiontocoursetotal">-</td>
+</tr>
+</tbody></table></div>        </section>
+        <aside id="block-region-side-pre" class="span3 desktop-first-column block-region" data-blockregion="side-pre" data-droptarget="1"><a class="skip skip-block" id="fsb-1" href="https://www.mecd.es/cidead/aulavirtual/grade/report/user/index.php?id=1013#sb-1">Salta Administración</a><div id="inst5" class="block_settings  block" role="navigation" data-block="settings" data-instanceid="5" aria-labelledby="instance-5-header" data-dockable="1"><div class="header"><div class="title" id="yui_3_17_2_1_1617486153508_91"><div class="block_action"><img class="block-hider-hide" alt="Oculta bloque Administración" src="./Calificaciones_ Vista_files/switch_minus.svg" tabindex="0" title="Oculta bloque Administración"><img class="block-hider-show" alt="Muestra bloque Administración" src="./Calificaciones_ Vista_files/switch_plus.svg" tabindex="0" title="Muestra bloque Administración"><input type="image" class="moveto customcommand requiresjs" alt="Minimizar en la barra lateral" title="Acoplar bloque Administración" src="./Calificaciones_ Vista_files/block_to_dock.svg"></div><h2 id="instance-5-header">Administración</h2></div></div><div class="content"><div id="settingsnav" class="box block_tree_box"><ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/site_admin_loader"><li class="type_unknown depth_1 contains_branch" tabindex="-1" aria-labelledby="label_1_1"><p class="tree_item root_node tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random6068e145c5dd42_group" tabindex="0" aria-selected="true"><span tabindex="-1">Administración de calificaciones</span></p><ul id="random6068e145c5dd42_group" role="group" tabindex="-1"><li class="type_setting depth_2 item_with_icon" tabindex="-1" aria-labelledby="label_2_1"><p class="tree_item hasicon tree_item leaf" role="treeitem" tabindex="-1" aria-selected="false"><a href="https://www.mecd.es/cidead/aulavirtual/grade/report/overview/index.php?id=1013" tabindex="-1"><img class="smallicon navicon" alt="" src="./Calificaciones_ Vista_files/report.svg" tabindex="-1">Informe general</a></p></li>
+<li class="type_setting depth_2 item_with_icon current_branch" tabindex="-1" aria-labelledby="label_2_2"><p class="tree_item hasicon active_tree_node tree_item leaf" role="treeitem" tabindex="-1" aria-selected="false"><a href="https://www.mecd.es/cidead/aulavirtual/grade/report/user/index.php?id=1013" tabindex="-1"><img class="smallicon navicon" alt="" src="./Calificaciones_ Vista_files/report.svg" tabindex="-1">Usuario</a></p></li></ul></li>
+<li class="type_course depth_1 contains_branch" tabindex="-1" aria-labelledby="label_1_2"><hr tabindex="-1"><p class="tree_item root_node tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random6068e145c5dd45_group" tabindex="-1" aria-selected="false"><span tabindex="-1">Administración del curso</span></p><ul id="random6068e145c5dd45_group" role="group" aria-hidden="true" tabindex="-1"><li class="type_setting depth_2 item_with_icon" tabindex="-1" aria-labelledby="label_2_1"><p class="tree_item hasicon tree_item leaf" role="treeitem" tabindex="-1" aria-selected="false"><a href="https://www.mecd.es/cidead/aulavirtual/grade/report/index.php?id=1013" tabindex="-1"><img class="smallicon navicon" alt="" src="./Calificaciones_ Vista_files/grades.svg" tabindex="-1">Calificaciones</a></p></li>
+<li class="type_setting depth_2 item_with_icon" tabindex="-1" aria-labelledby="label_2_2"><p class="tree_item hasicon tree_item leaf" role="treeitem" tabindex="-1" aria-selected="false"><a href="https://www.mecd.es/cidead/aulavirtual/admin/tool/lp/coursecompetencies.php?courseid=1013" tabindex="-1"><img class="smallicon navicon" alt="" src="./Calificaciones_ Vista_files/competencies.svg" tabindex="-1">Competencias</a></p></li></ul></li></ul></div></div></div><span class="skip-block-to" id="sb-1"></span><a class="skip skip-block" id="fsb-2" href="https://www.mecd.es/cidead/aulavirtual/grade/report/user/index.php?id=1013#sb-2">Salta Accesibilidad</a><div id="inst18281" class="block_accessibility  block" role="complementary" data-block="accessibility" data-instanceid="18281" aria-labelledby="instance-18281-header" data-dockable="1"><div class="header"><div class="title" id="yui_3_17_2_1_1617486153508_107"><div class="block_action"><img class="block-hider-hide" alt="Oculta bloque Accesibilidad" src="./Calificaciones_ Vista_files/switch_minus.svg" tabindex="0" title="Oculta bloque Accesibilidad"><img class="block-hider-show" alt="Muestra bloque Accesibilidad" src="./Calificaciones_ Vista_files/switch_plus.svg" tabindex="0" title="Muestra bloque Accesibilidad"><input type="image" class="moveto customcommand requiresjs" alt="Minimizar en la barra lateral" title="Acoplar bloque Accesibilidad" src="./Calificaciones_ Vista_files/block_to_dock.svg"></div><h2 id="instance-18281-header">Accesibilidad</h2></div></div><div class="content"><div id="accessibility_controls" class="content"><ul id="block_accessibility_textresize" class="button_row"><li class="access-button"><a title="Disminuir Tamaño del Texto" id="block_accessibility_dec">A-</a></li><li class="access-button"><a id="block_accessibility_reset" title="Restablecer Tamaño del Texto (Borra Configuración Guardada)" class="disabled">A</a></li><li class="access-button"><a title="Aumentar Tamaño del Texto" id="block_accessibility_inc">A+</a></li><li class="access-button"><a title="Guardar Configuración" id="block_accessibility_save">&nbsp;</a></li></ul><ul id="block_accessibility_changecolour"><li class="access-button"><a title="Esquema de Colores por Defecto (Borra Configuraciones Guardadas)" id="block_accessibility_colour1" class="disabled">R</a></li><li class="access-button"><a title="Contraste disminuído 1" id="block_accessibility_colour2">A</a></li><li class="access-button"><a title="Contraste disminuído 2" id="block_accessibility_colour3">A</a></li><li class="access-button"><a title="Alto Contraste" id="block_accessibility_colour4">A</a></li></ul><div id="block_accessibility_message" class="clearfix"></div><input type="button" value="Desplegar ATbar (barra AT)" id="block_accessibility_launchtoolbar" class="atbar_control access-button"><span class="atbar-always"><input type="checkbox" value="1" id="atbar_auto" name="atbar_auto" class="atbar_control"><label for="atbar_auto" class="atbar_control">(¿siempre?)</label></span></div><span id="loader-icon"></span></div></div><span class="skip-block-to" id="sb-2"></span></aside>    </div>
+
+    <footer id="page-footer">
+        <div id="course-footer"></div>
+        <p class="helplink"></p>
+        <div class="logininfo">Usted se ha identificado como <a href="https://www.mecd.es/cidead/aulavirtual/user/profile.php?id=13291" title="Ver perfil">XERACH ERNESTO CASANOVA CABRERA</a> (<a href="https://www.mecd.es/cidead/aulavirtual/login/logout.php?sesskey=sxg1ScpRrN">Salir</a>)</div><div class="homelink"><a href="https://www.mecd.es/cidead/aulavirtual/course/view.php?id=1013">30484(DAW_BD)</a></div>    </footer>
+
+    <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://www.mecd.es/cidead/aulavirtual/lib/requirejs.php/1612541458/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://www.mecd.es/cidead/aulavirtual/lib/javascript.php/1612541458/lib/jquery/jquery-1.12.1.min',
+        jqueryui: 'https://www.mecd.es/cidead/aulavirtual/lib/javascript.php/1612541458/lib/jquery/ui-1.11.4/jquery-ui.min',
+        jqueryprivate: 'https://www.mecd.es/cidead/aulavirtual/lib/javascript.php/1612541458/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="./Calificaciones_ Vista_files/javascript(4).php"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["block_settings/settingsblock"], function(amd) { amd.init("5", null); });;
+require(["core/notification"], function(amd) { amd.init(150718, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.mathjax.org\/mathjax\/2.6-latest\/MathJax.js?delayStartupUntil=configured"}});
+
+//]]>
+</script>
+<script type="text/javascript" src="./Calificaciones_ Vista_files/javascript(5).php"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u00daltima modificaci\u00f3n","name":"Nombre","error":"Error","info":"Informaci\u00f3n","yes":"S\u00ed","no":"No","morehelp":"M\u00e1s ayuda","loadinghelp":"Cargando...","cancel":"Cancelar","confirm":"Confirmar","areyousure":"\u00bfEst\u00e1 seguro?","closebuttontitle":"Cerrar","unknownerror":"Error desconocido"},"repository":{"type":"Tipo","size":"Tama\u00f1o","invalidjson":"Cadena JSON no v\u00e1lida","nofilesattached":"No se han adjuntado archivos","filepicker":"Selector de archivos","logout":"Salir","nofilesavailable":"No hay archivos disponibles","norepositoriesavailable":"Lo sentimos, ninguno de sus repositorios actuales puede devolver archivos en el formato solicitado.","fileexistsdialogheader":"El archivo existe","fileexistsdialog_editor":"Un archivo con ese nombre ha sido anexado al texto que Usted est\u00e1 editando","fileexistsdialog_filemanager":"Ya ha sido anexado un archivo con ese nombre","renameto":"Cambiar el nombre a \"{$a}\"","referencesexist":"Existen {$a} archivos de alias\/atajos que emplean este archivo como su or\u00edgen","select":"Seleccionar"},"admin":{"confirmdeletecomments":"Est\u00e1 a punto de eliminar comentarios, \u00bfest\u00e1 seguro?","confirmation":"Confirmaci\u00f3n"},"block":{"addtodock":"Minimizar en la barra lateral","undockitem":"Desacoplar este \u00edtem","dockblock":"Acoplar bloque {$a}","undockblock":"Desacoplar bloque {$a}","undockall":"Desacoplar todo","hidedockpanel":"Esconder el panel desacoplado","hidepanel":"Esconder panel"},"langconfig":{"thisdirectionvertical":"btt"},"block_accessibility":{"saved":"Configuraci\u00f3n Guardada","jsnosave":"Error al guardar configuraciones","reset":"Configuraci\u00f3n borrada","jsnosizereset":"Error al restablecer tama\u00f1o del texto","jsnocolourreset":"Error al restablecer esquema de colores","jsnosize":"Error al cambiar tama\u00f1o","jsnocolour":"Error al cambiar esquema de colores","jsnotloggedin":"Error! Por favor revisa si est\u00e1s logueado en el sistema o contacta a tu administrador","launchtoolbar":"Desplegar ATbar (barra AT)"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {M.util.load_flowplayer();
+setTimeout("fix_column_widths()", 20);
+function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://www.mecd.es/cidead/aulavirtual/mod/url/view.php?id=5332&redirect=1', '', 'width=1240,height=900,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+Y.use("moodle-core-dock-loader",function() {M.core.dock.loader.initLoader();
+});
+ M.util.js_pending('random6068e145c5dd48'); Y.use('block_accessibility', function(Y) { M.block_accessibility.init(Y, false, "18281");  M.util.js_complete('random6068e145c5dd48'); });
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+M.util.init_skiplink(Y);
+Y.use("moodle-core-actionmenu",function() {M.core.actionmenu.init();
+});
+M.util.init_block_hider(Y, {"id":"inst5","title":"Administraci\u00f3n","preference":"block5hidden","tooltipVisible":"Oculta bloque Administraci\u00f3n","tooltipHidden":"Muestra bloque Administraci\u00f3n"});
+M.util.init_block_hider(Y, {"id":"inst18281","title":"Accesibilidad","preference":"block18281hidden","tooltipVisible":"Oculta bloque Accesibilidad","tooltipHidden":"Muestra bloque Accesibilidad"});
+Y.use("moodle-core-formautosubmit",function() {M.core.init_formautosubmit({"selectid":"url_select6068e145c5dd413","nothing":false});
+});
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"es"});
+});
+ M.util.js_pending('random6068e145c5dd414'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random6068e145c5dd414'); });
+})();
+//]]>
+</script>
+
+</div>
+
+
+</body></html>

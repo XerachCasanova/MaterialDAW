@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Reserva de habitación</title>
+    <style>
+	
+	body{
+		padding:20px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		font-size: 0.9em;
+		
+	}
+	
+	form{
+		padding:10px;
+		background-color: rgb(100,220,220);
+		width:650px;
+		margin: auto;	
+	}
+	
+	legend{
+		color: rgb(255,255,255);
+		font-weight:bold;
+		
+	}
+	
+	.tituloform{
+		font-size: 1.5em;
+	}
+	
+	label{
+		font-size: 0.9em;	
+	}
+	
+	fieldset{
+		border-style: solid;
+		border-color:#066;
+		border-radius: 5px;
+	}
+	
+	input, textarea, select{
+		padding:5px;
+		background-color: rgb(160,220,220);
+		border: none;
+	}
+	
+	textarea{
+		width:80%;
+		height: 100px;
+	}
+	
+	input:focus, textarea:focus, select:focus {
+		background-color: rgb(80,180,180);
+		outline: none;
+	}
+	</style>
+</head>
+	
+<body>
+
+	<form action="paginaAccion.php" method="POST">
+   	<fieldset>
+    <legend class="tituloform">Haz tu reserva</legend>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="nombre" >Nombre:</label> 
+                <input type="text" id="nombre" name="nombre" maxlength="25" placeholder="Introduce tu nombre" autofocus required />
+            
+            	<label for="apellidos" >Apellidos:</label> 
+            	<input type="text" id="apellidos" name="apellidos"  maxlength="50" placeholder="Introduce tus apellidos" required />
+            </p>
+            <p>
+            	<label for="telefono" >Teléfono:</label> 
+            	<input type="text" id="telefono" name="telefono"  maxlength="10"  placeholder="Introduce tu teléfono" required />
+           
+            	<label for="email" >E-Mail:</label> 
+            	<input type="email" id="email" name="email"  maxlength="50" placeholder="Introduce tu e-mail" required />
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <p>
+                <label for="numeronoches" >Número de noches:</label> 
+                <input type="number" id="numeronoches" name="numeronoches" min="1" max="30" />
+                
+                <label for="diaentrada" >Día de entrada:</label> 
+                <select id="diaentrada" name="diaentrada">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">12</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                <label for="mesentrada" >Mes de entrada:</label> 
+                <select id="mesentrada" name="mesentrada">
+                  <option value="1">enero</option>
+                  <option value="2">febrero</option>
+                  <option value="3">marzo</option>
+                  <option value="4">abril</option>
+                  <option value="5">mayo</option>
+                  <option value="6">junio</option>
+                  <option value="7">julio</option>
+                  <option value="8">agosto</option>
+                  <option value="9">septiembre</option>
+                  <option value="10">octubre</option>
+                  <option value="11">noviembre</option>
+                  <option value="12">diciembre</option>
+                </select>
+            </p>
+            <p>
+              <label>Tipo de habitación:</label> 
+                <input type="radio" id="simple"  name="tipohabitacion" value="simple"/>
+                <label for="simple">simple</label> 
+                <input type="radio" id="doble" name="tipohabitacion" value="doble"/>
+                <label for="simple">doble</label> 
+                <input type="radio" id="matrimonio" name="tipohabitacion" value="matrimonio"/>
+                <label for="simple">matrimonio</label> 
+            </p>
+            <p>
+            <label>Régimen:</label> 
+            <input type="checkbox" id="desayuno" name="regimen" value="desayuno"/>
+            <label for="desayuno">Desayuno</label> 
+            <input type="checkbox" id="comida" name="regimen" value="comida"/>
+            <label for="comida">Comida</label> 
+            <input type="checkbox" id="cena" name="regimen" value="cena"/>
+            <label for="cena">Cena</label> 
+            <input type="checkbox" id="camasupletoria" name="regimen" value="camasupletoria"/>
+            <label for="camasupletoria">Cama supletoria</label> 
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Observaciones</legend>
+            <textarea placeholder="Escribe aquí alguna petición especial subre tu reserva" maxlength="500"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Revisa tus datos antes de enviar</legend>
+            <input type="button" value="Reservar" />
+            <input type="reset" value="Borrar datos" />
+        </fieldset
+    ></fieldset>
+    
+    
+    </form>
+</body>
+</html>

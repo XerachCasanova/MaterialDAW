@@ -1,0 +1,184 @@
+body { 
+		
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		background-color: rgb(160,188,188);
+		color: rgb(0,60,90);
+	}
+	
+	/* CONTENEDOR COMPLETO DE LA PÁGINA COMPLETA */ 
+	.contenedor {
+		width: 1280px;
+		margin: auto;
+		background-color: #FFF;
+		padding: 10px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+	}
+	
+    /* DISEÑO DEL HEADER */
+ 
+	#header_principal {
+		
+		width: 1280px;
+		margin: auto;
+		background-image: url(../imagenes/banner-xerach.jpg);
+		height:450px;
+		background-repeat:no-repeat;
+		margin-bottom: 20px
+	
+	}
+
+	#nombre{
+		font-size:8em;
+		padding-top: 150px;
+		text-align: right;
+		padding-right:400px;
+
+	}
+	
+	#apellidos {
+		font-size:5em;
+		color: rgb(0,60,90);
+		text-align: right;
+		padding-right:400px;
+	}
+	
+	#profesion {
+
+		display:block;
+		background-color: rgb(160,188,188);
+		font-size:1.5em;
+		text-align: right;
+		padding-right:10px;
+		margin-top:20px;
+		padding-top:10px;
+		padding-bottom:10px;
+
+	}
+
+	/*DISEÑO DE LOS ELEMENTOS GENERALES*/	
+
+	
+	h1 {
+		padding:0;
+		margin:0;
+		font-size: 4em;
+		font-weight: bold
+	}
+	
+	h2 {
+		padding: 0;
+		margin: 0;
+		font-size: 2em;
+		font-weight: bold;
+		padding-bottom:10px;
+		text-align:center;
+	}
+	
+	h3 {
+		font-size: 1.5em;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	
+	table {
+		margin: auto;
+		border-collapse:separate;
+	}
+	
+	th{
+		color: rgb(255,255,255);
+		background-color: rgb(0,102,204);
+		padding:10px;
+	}
+	
+	td{
+		background-color: rgb(0,153,255);
+		padding:10px;
+	}
+	
+	a {
+		font-weight:bold;
+	}
+
+	
+	/* DISEÑO Y ESTRUCTURA DEL CONTENIDO DE LA PÁGINA */
+	
+	main{
+		overflow:hidden;
+		padding: 5px;
+		width: 1280px;
+		margin: auto;
+	
+	}
+	
+	article{
+		margin: 10px;
+		padding: 5px;
+		text-align:justify
+	}
+	
+	aside{
+		
+		height:100%;
+		float: left;
+		margin-right: 20px;
+		width: 20%;
+		height:100%;
+		background-color:rgb(255,255,255);
+		border: solid thin rgb(0,204,255);	
+
+	}
+	
+	aside article {
+		margin:0;
+		padding: 10px;
+		background-color: #09C;
+	}
+	
+	section{
+		float: right;
+		width: 78%;
+	}
+	
+	/*DISEÑO DE LAS FOTOS*/
+	
+	#fotoperfil{
+		width: 110px;
+		float:left;
+		padding: 4px;
+		background-color:rgb(255,255,255);
+		margin-right: 10px;
+		margin-bottom: 10px
+	
+	}
+	/*DISEÑO DEL PIE*/
+	
+	.marcofoto{
+		margin:10px;
+		float:left;
+		width: 300px;
+		height: 300px;
+		box-shadow:2px 2px 5px rgba(0,0,0,0.5)
+
+	}
+	
+	.fotos{
+		width: 280px;
+		margin-top: 10px;
+		margin-left:10px;	
+		
+	}
+	
+	.piedefoto {
+		text-align:center;
+		font-style:italic;
+		font-stretch:semi-condensed;
+		font-size: 12px;
+		margin:0;
+	}
+	
+	footer{
+		width: 1280px;
+		margin: auto;
+		text-align: right
+	}

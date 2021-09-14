@@ -1,0 +1,197 @@
+body { 
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		background-color: rgb(204,204,204);
+		color: rgb(102,102,102)
+	}
+	
+	/* DISEÑO DEL CONTENEDOR GENERAL */ 
+	
+	#contenedor {
+		overflow: hidden;
+		width: 1280px;
+		margin: auto;
+		background-color: #FFF;
+		padding: 10px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+	}
+	
+    /* DISEÑO DEL HEADER*/
+ 
+	#header_principal {
+		width: 1280px;
+		margin: auto;
+		background-image: url(../imagenes/banner.jpg);
+		height:300px;
+		background-repeat:no-repeat;
+		margin-bottom: 20px
+	
+	}
+
+	#logo {
+		width: 200px;
+		text-align: center;
+		display: block;
+		margin:auto;
+		padding-top:10px;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.5) 
+	}
+	
+	#cabecera-titulo{;
+		padding-top: 10px;
+		color: rgb(255,255,255);
+		text-align: center;
+		text-shadow: 5px 5px 5px rgba(0,0,0,0.5) 
+	}
+	
+	#cabecera-subtitulo {;
+		color: rgb(255,255,255);
+		text-align: center;
+		
+	}
+	
+	/* DISEÑO DEL MENÚ */
+
+	nav {
+		margin-bottom: 20px;
+	}
+	
+	nav li {
+		width:100%;		
+		list-style-type: none;
+		background-color:#CCC;
+		border: dashed 2px rgb(102,102,102);
+		text-align:center;
+		width: 150px;
+		margin-left: 1px;
+		margin-right: 1px;
+	
+	}
+	
+	nav ul{
+		display: flex;
+		justify-content: center;
+		width:100%;
+
+	}
+	
+	nav li a {
+		display:block;
+		padding: 4px;
+		font-weight:bold;
+		text-decoration: none;
+		color: rgb(72,65,76);	
+		
+	}
+	
+	nav li a:hover {
+		background-color: rgb(72,65,76);
+		font-weight: bold;
+		color: rgb(255,255,255);	
+	}
+	
+	/* DISEÑO DEL CONTENIDO Y LAS RECETAS */
+	
+	main{
+		overflow:hidden;
+		height:100%;
+	}
+	
+	
+	.receta{
+		float:left;
+		margin-right:10px;
+		width:65%
+	
+	}
+	.receta h3{
+		background-color: rgb(102,102,102);
+		color:#FFF
+	}
+	
+	.ingredientes{
+		width:33%;
+		
+		float:right;
+		border: 2px dashed rgb(153,153,153);
+	
+	}
+	
+	.imagenestitulos{
+		float:left;
+		width:50px;
+		
+	
+	}
+	
+	/*DISEÑO DE LOS ELEMENTOS GENERALES*/	
+	
+	h1 {
+		padding:0;
+		margin:0;
+		font-size: 4em;
+		font-variant:small-caps;
+		font-weight: bold
+	}
+	
+	h2 {
+		padding: 0;
+		margin: 0;
+		font-size: 2em;
+		font-variant:small-caps;
+		font-weight: bold;
+		text-transform: capitalize;
+		padding-bottom:10px;
+		text-align:center;
+	}
+	
+	h3 {
+		font-size: 1.5em;
+		font-variant:small-caps;
+		font-weight: bold;
+		text-transform: capitalize;
+		padding-left:60px;
+		margin-bottom: 5px;
+	}
+	
+
+	ul{
+		
+		padding: 20px 20px 10px 20px;	
+	}
+	
+	li{
+		list-style-type:circle
+	}
+	
+	
+	table {
+		padding:3px;
+		background-color: rgb(239,239,239);
+		border-radius: 5px;
+		margin-top:40px;
+		border-collapse:separate;
+		border-spacing:2px;
+		
+	}
+	
+	td{
+		padding: 20px;
+		border-radius: 5px;
+	}
+	
+	th{
+		
+		font-weight:bold;
+		background-color: rgb(228,228,228);
+		padding: 20px;
+		border-radius: 5px;
+	}
+	
+	/*DISEÑO DEL PIE*/
+	
+	footer{
+		margin-top:50px;
+		text-align:right;
+		padding-right: 10px;
+		
+	}
